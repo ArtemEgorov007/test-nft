@@ -6,7 +6,6 @@ function mobileNav() {
 	const nav = document.querySelector("#mobileNav");
 
 	navBtnOpen.onclick = toggleMobileNav;
-	// navBtnClose.onclick = toggleMobileNav;
 	navOverlay.onclick = toggleMobileNav;
 
 	function toggleMobileNav(event) {
@@ -14,9 +13,7 @@ function mobileNav() {
 		nav.classList.toggle("mobile-nav--open");
 		document.body.classList.toggle("no-scroll");
 
-		// Проверяем, было ли событие вызвано кликом по оверлею
 		if (event.target === navOverlay) {
-			// Сбрасываем состояние чекбокса
 			checkbox.checked = false;
 		}
 	}
